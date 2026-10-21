@@ -1,4 +1,4 @@
-# AWS Web Hosting Lab
+# Built a Mini AWS Hosting Lab and Reverse-Engineered It into Terraform
 
 This is my imported AWS lab, built for learning by doing. I played with ALB, Auto Scaling, AMIs, user data, target groups, and hosting a static site on S3 manually. After completing lab, I thought to import it to terraform and here it is.
 
