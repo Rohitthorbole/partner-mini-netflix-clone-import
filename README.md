@@ -1,8 +1,8 @@
 # AWS Web Hosting Lab
 
-Bro, wake up—I know it's midnight... hahaha! 🌙
+This is my imported AWS lab, built for learning by doing. I played with ALB, Auto Scaling, AMIs, user data, target groups, and hosting a static site on S3 manually. After completing lab, I thought to import it to terraform and here it is.
 
-This is my imported AWS lab, built for learning by doing. I played with ALB, Auto Scaling, AMIs, user data, target groups, and hosting a static site on S3.
+Import block can be removed once you import all resources. (I am keeping then intentionally)
 
 ## Two ways to host
 
