@@ -37,3 +37,24 @@ import {
   to = aws_launch_template.my_launch_template
   id = "lt-0981a76f32a15a8d6"
 }
+
+#asg
+resource "aws_autoscaling_group" "my_asg" {
+  desired_capacity = 2
+  max_size         = 5
+  min_size         = 2
+  instance_maintenance_policy {
+    max_healthy_percentage = 110
+    min_healthy_percentage = 100
+  }
+  launch_template {
+    id      = aws_launch_template.my_launch_template.id
+    version = "$Latest"
+  }
+}
+
+#asg Import
+import {
+  to = aws_autoscaling_group.my_asg
+  id = "MY_ASG"
+}
