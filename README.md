@@ -1,4 +1,13 @@
-# partner-mini-netflix-clone-import
-Private repo to import aws practice lab , which is hosting my old static website
+# AWS Web Hosting Lab
 
-Before planning, set `vpc_cidr_block` to the existing VPC's CIDR block (for example, in `terraform.tfvars`). The value must match the VPC being imported.
+Bro, wake up—I know it's midnight... hahaha! 🌙
+
+This is my imported AWS lab, built for learning by doing. I played with ALB, Auto Scaling, AMIs, user data, target groups, and hosting a static site on S3.
+
+## Two ways to host
+
+- ALB + EC2 + Auto Scaling: More control for apps that need servers. Great for learning compute, scaling, and load balancing. More to manage, too.
+
+- S3 static hosting: Simple and lightweight for sites made of static files. No servers to manage—but no server-side app code either.
+
+
