@@ -51,6 +51,7 @@ resource "aws_autoscaling_group" "my_asg" {
     id      = aws_launch_template.my_launch_template.id
     version = "$Latest"
   }
+  target_group_arns = [aws_lb_target_group.target_group.arn]
 }
 
 #asg Import
